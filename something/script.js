@@ -104,3 +104,6 @@ console.log(student["name"]);
 
 //getting the 2nd student
 console.log(student[1].course);
+
+student[0].subjects.splice(1, 0, "ENGLISH");
+console.log(student[0]);
