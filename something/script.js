@@ -51,3 +51,11 @@ console.log(numbers3);
 const numbers4 = numbers.slice(3, 10)
 console.log(numbers4);
 
+
+//SORT
+//to sort to ascending order!!
+// sorting as string/treated as string
+numbers.sort();
+console.log(numbers);
+//to reverse an array
+numbers.sort().reverse();
