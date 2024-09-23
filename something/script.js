@@ -77,7 +77,7 @@ const student = {
     "name":"Jazric",
     "course":"BSIT",
     "address":"San Felix",
-    "grade":"69",
+    "grade":69,
 
     //array
     "subjects":["CCIT102", "FAITH101", "PE"]
