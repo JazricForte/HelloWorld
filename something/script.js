@@ -72,7 +72,8 @@
 //ARRAY!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //OBJECT
-const student = {
+const student = [
+    {
     //key   value
     "name":"Jazric",
     "course":"BSIT",
@@ -81,7 +82,15 @@ const student = {
 
     //array
     "subjects":["CCIT102", "FAITH101", "PE"]
-}
+    },
+    {
+        "name":"Jennifer",
+        "course":"Cashier wahahah",
+        "address":"San Antonio",
+        "grade":69,
+        "subjects":["CCIT102", "FAITH101", "PE"]
+    }
+]
 
 console.log(student);
 
@@ -91,4 +100,7 @@ console.log(student.name);
 console.log(student["name"]);
 
 //getting the specific element of an array of a key-value pair!!
-console.log(student.subjects[2]);
+// console.log(student.subjects[2]);
+
+//getting the 2nd student
+console.log(student[1].course);
