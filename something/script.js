@@ -59,3 +59,11 @@ numbers.sort();
 console.log(numbers);
 //to reverse an array
 numbers.sort().reverse();
+
+//SPLICE
+// 0 in the middle means to insert
+// 1 in the middle means to replace
+//(1, 2) = removes the specified index
+//(2, 0, 'c'/anynumber)
+numbers.splice(2, 1);
+console.log(numbers);
