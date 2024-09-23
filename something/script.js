@@ -77,7 +77,10 @@ const student = {
     "name":"Jazric",
     "course":"BSIT",
     "address":"San Felix",
-    "grade":"69"
+    "grade":"69",
+
+    //array
+    "subjects":["CCIT102", "FAITH101", "PE"]
 }
 
 console.log(student);
@@ -86,3 +89,6 @@ console.log(student);
 console.log(student.name);
 //or
 console.log(student["name"]);
+
+//getting the specific element of an array of a key-value pair!!
+console.log(student.subjects[2]);
