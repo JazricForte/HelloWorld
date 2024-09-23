@@ -105,5 +105,26 @@ console.log(student["name"]);
 //getting the 2nd student
 console.log(student[1].course);
 
+
+//adding something in an array of a object
 student[0].subjects.splice(1, 0, "ENGLISH");
 console.log(student[0]);
+
+//          the "index" can be anything like a variable 
+// students.map((value, index) =>{
+    
+// });
+
+
+var container = document.getElementById('student');
+console.log(container);
+var output = "";
+
+student.map((student, index) => {
+    output += student.name;
+    output += " ";
+    output += student.course;
+    output += "<br>";
+});
+console.log(output);
+container.innerHTML = output;
