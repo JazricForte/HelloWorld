@@ -5,7 +5,9 @@ let studentGrade = " ";
 
 var realOutput = [];
 
+
 function AddStudent() {
+    var htmlOutput = "";
     studentName = prompt("Please enter name");
     studentCourse = prompt("Please enter course");
     studentAddress = prompt("Please enter address");
@@ -45,5 +47,17 @@ student.map((student, index) => {
 });
 realOutput.push(output);
 console.log(realOutput);
-container.innerHTML = realOutput;
+
+if(realOutput.length == 1) {
+    for(let i = 0; i <= realOutput.length; i++) {
+        htmlOutput += realOutput[i];
+    }
+}
+else {
+    for(let i = 0; i < realOutput.length; i++) {
+        htmlOutput += realOutput[i];
+    }
+}
+
+container.innerHTML = htmlOutput;
 }
