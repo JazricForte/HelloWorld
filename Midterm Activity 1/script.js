@@ -3,6 +3,8 @@ let studentCourse = " ";
 let studentAddress = " ";
 let studentGrade = " ";
 
+var realOutput = [];
+
 function AddStudent() {
     studentName = prompt("Please enter name");
     studentCourse = prompt("Please enter course");
@@ -25,7 +27,7 @@ console.log(student);
 
 var container = document.getElementById('student');
 console.log(container);
-var output = output;
+var output = "";
 
 student.map((student, index) => {
     output += "<h1>";
@@ -39,7 +41,9 @@ student.map((student, index) => {
     output += student.address;
     output += " Grade: ";
     output += student.grade;
+    output += "<br>";
 });
-console.log(output);
-container.innerHTML = output;
+realOutput.push(output);
+console.log(realOutput);
+container.innerHTML = realOutput;
 }
